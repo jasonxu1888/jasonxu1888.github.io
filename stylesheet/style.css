@@ -1,0 +1,205 @@
+/* Your SCSS here. */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#navbar {
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  position: fixed;
+  min-width: 100vw;
+  transition: all 0.3s ease-in-out;
+}
+#navbar #logo {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding-left: 40px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  transition: all 0.3s ease-in-out;
+}
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  padding-right: 20px;
+}
+#navbar ul li a.navitems {
+  text-decoration: none;
+  margin: 0px 20px;
+  padding: 5px 10px;
+  color: black;
+  font-size: 25px;
+  letter-spacing: 1px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+#navbar ul li a.navitems:hover {
+  color: white;
+  background-color: black;
+}
+#navbar ul li a.active {
+  color: white;
+  background-color: black;
+}
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home #content {
+  z-index: 0;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  max-width: 50vw;
+}
+#home #content img {
+  transform: scale(0.8);
+  border-radius: 50%;
+}
+#home #content h1 {
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+#home #content p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+#about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: black;
+  height: 100vh;
+}
+#about .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: white;
+  width: 25vw;
+  height: 36vh;
+  overflow-y: auto;
+}
+#about .box p {
+  text-align: center;
+  line-height: 25px;
+  padding: 5px 30px 5px;
+}
+#about .box p i {
+  letter-spacing: 2px;
+}
+#experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+#experience .carousel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#experience .carousel .carousel-slide {
+  flex: 0 0 100%;
+  height: 50vh;
+  transition: transform 0.5s ease-in-out;
+  background: white;
+  text-align: center;
+}
+#experience .carousel .carousel-slide h2 {
+  font-size: 24px;
+}
+#experience .carousel .carousel-slide p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin: 20px;
+}
+#experience i {
+  margin: 20px;
+  color: black;
+  border-radius: 50%;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#experience i:hover {
+  color: white;
+  background: black;
+}
+#contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+#contact i {
+  filter: invert(100%);
+  border-radius: 25%;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+#contact i:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 5px black;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 40px 10px;
+}
+#footer {
+  display: flex;
+  height: 5vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
